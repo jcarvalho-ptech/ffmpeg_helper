@@ -13,8 +13,11 @@ import '../ffmpeg_helper.dart';
 
 class FFMpegHelper {
   static final FFMpegHelper _singleton = FFMpegHelper._internal();
+
   factory FFMpegHelper() => _singleton;
+
   FFMpegHelper._internal();
+
   static FFMpegHelper get instance => _singleton;
 
   //
